@@ -17,10 +17,10 @@ const Newsletter = () => {
   return(
     <NewsForm form method="post" netlify-honeypot="bot-field" data-netlify="true" name="Newsletter">
       <Label for="email">Email address: &nbsp;</Label>
-        <FormField type="email" placeholder="hello@myemail.com"></FormField>
+        <FormField type="email" placeholder="hello@myemail.com" required></FormField>
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <FormField type="submit" value="Sign Me Up"></FormField>
+        <button type="submit" value="Sign Me Up"></button>
     </NewsForm>
   )
 }
