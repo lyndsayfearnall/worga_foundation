@@ -16,7 +16,7 @@ const IndexPage = () => {
       index:  datoCmsHome{
         heroText
         heroImage{
-          fluid(maxWidth: 2000, imgixParams: { fm: "jpg", auto: "compress" , fpDebug: true, fpZ: 5, fpX: 0.35, crop: "focalpoint" }) {
+          fluid(maxWidth: 2000, imgixParams: { fm: "jpg", auto: "compress" , fit: "crop", crop: "focalpoint", fpZ: 1, fpX: 0.4 }) {
             ...GatsbyDatoCmsFluid
           }
           alt
@@ -40,8 +40,5 @@ const IndexPage = () => {
   )
 }
 
-// IndexPage.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
 
 export default IndexPage

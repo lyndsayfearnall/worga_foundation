@@ -7,8 +7,8 @@ const H1 = styled.h1`
   ${p => p.theme.mediaQueries.ipadUp}{
     font-size: 4rem;
   }
-  ${p => p.theme.mediaQueries.ipadUp}{
-    font-size: 5rem;
+  ${p => p.theme.mediaQueries.largeUp}{
+    font-size: 4.2rem;
   }
 `
 export default H1

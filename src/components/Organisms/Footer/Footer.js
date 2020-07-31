@@ -18,18 +18,19 @@ const FooterCon = styled.div`
 const FlexContainer = styled(Container)`
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   ${p => p.theme.mediaQueries.ipadUp}{
     flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
   }
+
 `
 const IconCon = styled.div`
-  padding-top: 20px;
-  ${p => p.theme.mediaQueries.ipadUp}{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-bottom: 50px; 
-  }
+padding-top: 30px;
+${p => p.theme.mediaQueries.ipadUp}{
+  padding: 0 50px;
+}
 `
 
 const Footer = ({data}) => {

@@ -14,23 +14,9 @@ const Label = styled.label`
 `
 
 class Newsletter extends React.Component{
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       email: ""
-//     };
-//     this.handleInputChange = this.handleInputChange.bind(this);
-//   }
-
-//   handleInputChange(event) {
-//     const target = event.target;
-//     const email = target.name;
-// }
-
-handleSubmit = event => {
-  event.preventDefault()
-}
-
+  handleSubmit = event => {
+    event.preventDefault()
+  }
   render(){
   return(
     <NewsForm method="POST" netlify-honeypot="bot-field" data-netlify="true" name="Newsletter" >
