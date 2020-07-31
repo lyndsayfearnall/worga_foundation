@@ -29,7 +29,7 @@ const FlexContainer = styled(Container)`
 const IconCon = styled.div`
 padding-top: 30px;
 ${p => p.theme.mediaQueries.ipadUp}{
-  padding: 0 50px;
+  padding: 0 0 0 50px;
 }
 `
 
