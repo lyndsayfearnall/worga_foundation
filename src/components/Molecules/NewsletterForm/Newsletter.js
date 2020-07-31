@@ -36,7 +36,7 @@ handleSubmit = event => {
     <NewsForm method="POST" netlify-honeypot="bot-field" data-netlify="true" name="Newsletter" >
       <input type="hidden" name="Newsletter" value="Newsletter" />
       <Label for="email">Email address: &nbsp;</Label>
-      <FormField type="email" placeholder="hello@myemail.com" required/>
+      <FormField type="email" placeholder="hello@myemail.com" required name="email"/>
       <input type="hidden" name="bot-field" />
       <FormField type="submit" value="Sign Me Up" onSubmit={this.handleSubmit}/>
     </NewsForm>
