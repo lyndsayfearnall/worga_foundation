@@ -14,7 +14,6 @@ const HeroCon = styled(Container)`
   align-items: center;
   h1{
     width: 70%;
-    margin-bottom: 70px;
   }
   ${p => p.theme.mediaQueries.mediumUp}{
     h1{
