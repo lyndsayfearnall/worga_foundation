@@ -15,9 +15,11 @@ const Label = styled.label`
 
 const Newsletter = () => {
   return(
-    <NewsForm>
+    <NewsForm form method="post" netlify-honeypot="bot-field" data-netlify="true" name="Newsletter">
       <Label for="email">Email address: &nbsp;</Label>
         <FormField type="email" placeholder="hello@myemail.com"></FormField>
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <FormField type="submit" value="Sign Me Up"></FormField>
     </NewsForm>
   )

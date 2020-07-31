@@ -27,7 +27,8 @@ const IconCon = styled.div`
   ${p => p.theme.mediaQueries.ipadUp}{
     position: absolute;
     bottom: 0;
-    right: 0; 
+    right: 0;
+    padding-bottom: 50px; 
   }
 `
 

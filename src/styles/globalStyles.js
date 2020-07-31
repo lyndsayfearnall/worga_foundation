@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
 }
 
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
 html{
   width: 100%;
   max-width: 100%;
