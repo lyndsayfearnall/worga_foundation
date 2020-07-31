@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Container from "../../Atoms/Container"
-import {H2, Markdown} from "../../Atoms/Typography"
+import {H2, Markdown, Dot} from "../../Atoms/Typography"
 import Icon from "../../Atoms/Icon"
 
 import Newsletter from '../../Molecules/NewsletterForm'
@@ -36,7 +36,7 @@ const Footer = ({data}) => {
     <FooterCon>
       <FlexContainer>
         <div>  
-          <H2>{data.newsletterHeading}</H2>
+          <H2>{data.newsletterHeading}<Dot teal /></H2>
           <Markdown markdown={data.newsletterTextNode.childMarkdownRemark.html}/>
           <Newsletter />
         </div>

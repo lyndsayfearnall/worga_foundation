@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Container from "../../Atoms/Container"
-import {H2, Markdown} from "../../Atoms/Typography"
+import {H2, Markdown, Dot} from "../../Atoms/Typography"
 
 const AboutCon= styled.div`
   position: relative;
@@ -28,7 +28,7 @@ const About = ({data}) => {
     <AboutCon>
       {/* <Circle/> */}
       <Container>
-        <H2>{data.aboutHeading}</H2>
+        <H2>{data.aboutHeading}<Dot /></H2>
         <Markdown markdown={data.aboutTextNode.childMarkdownRemark.html}/>
       </Container>
     </AboutCon>
