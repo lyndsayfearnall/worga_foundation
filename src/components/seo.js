@@ -24,9 +24,6 @@ function SEO({ description, lang, meta, title }) {
             url
           }
         }
-        index: datoCmsHome{
-          aboutText
-        }
       }
     `
   )
@@ -51,7 +48,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: site.index.aboutText,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:type`,
@@ -83,7 +80,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
-          content: site.index.aboutText,
+          content: site.siteMetadata.description,
         },
         {
           name: `twitter:url`,
