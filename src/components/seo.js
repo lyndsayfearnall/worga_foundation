@@ -13,9 +13,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import socialMediaImg from '../images/twitter-img-lg.jpg'
 
 function SEO({ description, lang, meta, title }) {
-  const site  = useStaticQuery(
+  const { site }  = useStaticQuery(
     graphql`
-      query seoQuery {
+      query {
         site {
           siteMetadata {
             title
