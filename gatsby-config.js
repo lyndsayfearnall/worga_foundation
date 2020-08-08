@@ -3,6 +3,7 @@ module.exports = {
     title: `Worga Foundation`,
     description: `Worga Foundation website.`,
     author: `lfearnall`,
+    url: `https://www.worgafoundation.org`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import socialMediaImg from '../images/twitter-img-lg.jpg'
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -19,7 +21,11 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
           }
+        }
+        index: datoCmsHome{
+          aboutText
         }
       }
     `
@@ -45,15 +51,27 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: site.index.aboutText,
         },
         {
           property: `og:type`,
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
+        {
+          property: `og:image`,
+          content: socialMediaImg,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image`,
+          content: socialMediaImg,
         },
         {
           name: `twitter:creator`,
@@ -65,7 +83,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: site.index.aboutText,
+        },
+        {
+          name: `twitter:url`,
+          content: site.siteMetadata.url,
         },
       ].concat(meta)}
     />
