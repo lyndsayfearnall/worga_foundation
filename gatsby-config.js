@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Worga Foundation`,
-    description: `Worga Foundation website.`,
+    description: `The Worga Foundation believes in a world where Mabaan youth are contributing their knowledge and experiences to the development of countries around the world. 
+
+    We are working on this by providing students with micro-grants, from our grassroots Education Support Fund, to help them overcome challenges that could force them to leave school. Often, the difference between staying in school and being forced out is no more than the cost of photocopies, graduation fees, solar lamps, or bus tickets. 
+    
+    When that’s all it takes to keep a student in school, we find a way to help.`,
     author: `lfearnall`,
+    url: `https://www.worgafoundation.org`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
